@@ -15,6 +15,8 @@ import { BlogComponent } from './pages/blog/blog.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { PortfolioComponent } from './pages/portfolio/portfolio.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
+import { TeamService } from './services/team.service';
+import { BlogService } from './services/blog.service';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,7 @@ import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.com
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [TeamService, BlogService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
