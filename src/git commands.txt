@@ -1,0 +1,41 @@
+git config --list
+
+git config --global credential.helper store
+git pull
+
+
+git config --global user.name "your username"
+git config --global user.password "your password"
+
+On Windows, the following steps should re-trigger the GitHub login window when git cloneing:
+
+Search start menu for "Credential Manager"
+Select "Windows Credentials"
+Delete any credentials related to Git or GitHub
+
+git config --global core.askpass
+
+
+After git merged
+git swich to master and push
+
+// delete branch locally
+git branch -d localBranchName
+
+// delete branch remotely
+git push origin --delete remoteBranchName
+
+// shows all remote branches
+git branch -a
+
+// Merge dev branch to master
+git add .
+git commit -m "cmt"
+git push origin dev
+
+git checkout master
+git merge dev
+git push origin master
+
+git branch -d dev
+git push origin --delete dev
